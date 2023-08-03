@@ -237,4 +237,16 @@
         margin-left: 50%;
         transform: translateX(-50%);
     }
+    .header__menu--test-option{
+        width: 120px;
+        right: -20px;
+        transform-origin: calc(80%) top;
+        padding: 10px 5px 5px 5px;
+    }
+    .menu__option--title{
+        height: 20px;
+    }
+    .menu__option--title a{
+        font-size: 14px;
+    }
 }
