@@ -1,0 +1,61 @@
+:root{
+    --text-color: rgba(245, 245, 245, 1);
+    --background-color: rgba(43, 43, 43, 1);
+    --text-color-primary: rgba(255, 255, 255, 1);
+    --font-family: Work Sans;
+    --background-color-primary: rgba(162, 89, 255, 1);
+    --cards-color: rgb(43,43,43)
+}
+
+@keyframes cardtransition{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+
+@keyframes cardtransition2{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.02);
+    }
+}
+
+@keyframes alipanimation{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile & Tablet */
+@media screen and (max-width: 1023px) {
+    .box{
+        width: 100%;
+    }
+    .header__menu-option{
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+ 
+}

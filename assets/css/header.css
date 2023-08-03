@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+.box{
+    display: flex;
+    /* width: 1280px; */
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--text-color-primary);
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--background-color);
+    /* position: relative; */
+}
+
+.header__nft{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header__nft-title{
+    color: rgba(245, 245, 245, 1);
+    flex-shrink: 0;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    gap: 10px;
+} 
+
+.header__menu-option{
+    padding: 0 20px;
+}
+
+.header__menu-option a{
+    text-decoration: none;
+    color: var(--text-color-primary);
+    font-size: 16px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;  
+} 
+
+.header__menu-button{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: #A259FF;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    gap: 12px;
+    color: var(--text-color);
+}
+
+
+
+.header__menu-button-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.header__menu-button-title{
+    height: 20px;
+}
+
+.header__menu-button:hover{
+    cursor: pointer;
+}
+
+.slide{
+    width: calc(100% + 100px);
+    background-color: var(--background-color);
+   
+}
+.slide__img{
+    width: 100%;
+}
+
+.slide__avt{
+    height: 120px;
+    width: 120px;
+    flex-shrink: 0;
+    margin-left: 115px;
+    margin-top: -70px;
+    border-radius: 20px;
+    border: 2px solid var(--background, #2B2B2B);
+}
+
+.header__menu--test{
+    display: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.header__menu--test{
+    display: none;
+    position: relative;
+    /* top: calc(100% + 4px); */
+}
+
+.header__menu--test-option{
+    background-color: var(--background-color);
+    position: absolute;
+    width: 150px;
+    top: calc(100% + 10px);
+    list-style: none;
+    padding: 30px 10px 10px 10px;
+    right: -40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform-origin: calc(70%) top;
+    animation: alipanimation linear 0.5s;
+    display: none;
+}
+
+.header__menu--test:hover .header__menu--test-option{
+    display: block;
+}
+
+.header__menu--test:hover .header__menu--test-icon{
+    display: block;
+}
+
+.header__menu--test:hover .header__menu--test-img{
+    display: none;
+}
+
+.header__menu--test-option::after{
+    position: absolute;
+    content: "";
+    top: -15px;
+    right: 0;
+    height: 40px;
+    width: 60%;
+    display: block;
+    /* background-color: red; */
+}
+
+.menu__option--title{
+    height: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu__option--title a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+}
+
+.menu__option--title:hover a{
+    cursor: pointer;
+    color: var(--background-color-primary);
+}
+
+.header__menu--test-icon{
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .header__menu--test{
+        display: block;
+        z-index: 1;
+    }
+    .slide__avt{
+        margin-left: 72px;
+    }
+}
+
+/* Mobile & Tablet*/
+@media screen and (max-width: 1023px) {
+    .header__menu-button{
+        display: none;
+    }
+    .slide__avt{
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+    }
+    .header__menu--test{
+        display: block;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .header{
+        padding: 15px 30px;
+    }
+    .header__nft-icon{
+        width: 24px;
+        height: 24px;
+    }
+    .header__nft-title{
+        align-items: center;
+        font-size: 16px;
+    }
+    .slide{
+        width: calc(100% + 60px);
+    }
+    .slide__avt{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
