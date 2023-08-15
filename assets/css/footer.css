@@ -1,5 +1,5 @@
 .footer{
-    width: calc(100% + 100px);
+    width: 100%;
     padding: 40px 0;
     background-color: var(--background-color);
 }
@@ -274,9 +274,9 @@
 }
 
 @media screen and (max-width: 739px){
-    .footer{
+    /* .footer{
         width: calc(100% + 60px);
-    }
+    } */
     .footer__info{
         margin: 0 40px;
     }

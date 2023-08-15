@@ -20,13 +20,16 @@
 }
 
 .header{
-    width: 100%;
+    width: calc(100% - 100px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     background-color: var(--background-color);
-    /* position: relative; */
+    /* position: fixed;
+    right: 0;
+    top: 0;
+    left: 0; */
 }
 
 .header__nft{
@@ -94,7 +97,7 @@
 }
 
 .slide{
-    width: calc(100% + 100px);
+    width: 100%;
     background-color: var(--background-color);
    
 }
@@ -220,6 +223,7 @@
 /* Mobile */
 @media screen and (max-width: 739px) {
     .header{
+        width: calc(100% - 60px);
         padding: 15px 30px;
     }
     .header__nft-icon{
@@ -230,9 +234,9 @@
         align-items: center;
         font-size: 16px;
     }
-    .slide{
+    /* .slide{
         width: calc(100% + 60px);
-    }
+    } */
     .slide__avt{
         margin-left: 50%;
         transform: translateX(-50%);

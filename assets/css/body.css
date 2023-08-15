@@ -1,5 +1,5 @@
 .container{
-    width: calc(100% + 100px);
+    width: 100%;
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
@@ -462,9 +462,9 @@
 
 /* Mobile */
 @media screen and (max-width: 739px) {
-    .container{
+    /* .container{
         width: calc(100% + 60px);
-    }
+    } */
     .option__button-test{
         display: flex;
         flex-direction: column;
