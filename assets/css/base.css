@@ -6,6 +6,11 @@
     --background-color-primary: rgba(162, 89, 255, 1);
     --cards-color: rgb(43,43,43)
 }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
 
 @keyframes cardtransition{
     from{
