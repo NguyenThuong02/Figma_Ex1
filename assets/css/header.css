@@ -89,6 +89,8 @@
     cursor: pointer;
 }
 
+    /* Có thể cho thẻ cha là backgroup img và cho nó là position: relative
+    còn avt là position: absolute */
 .slide{
     width: 100%;
     background-color: var(--background-color);
@@ -98,6 +100,7 @@
     width: 100%;
 }
 
+    /* Nên dùng giá trị tương đối % để khi kích thước màn hình thay đổi nó sẽ thay đổi theo */
 .slide__avt{
     height: 120px;
     width: 120px;

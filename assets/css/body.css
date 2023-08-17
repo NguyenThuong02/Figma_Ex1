@@ -173,6 +173,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .option__button-follow{
@@ -184,7 +185,8 @@
     gap: 12px;
     border-radius: 20px;
     border: 2px solid var(--background-color-primary);
-    background-color: var(--background-color);
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .option__button-follow--icon{
